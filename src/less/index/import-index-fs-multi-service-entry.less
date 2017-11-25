@@ -1,0 +1,73 @@
+.service_entry {
+    overflow: hidden;
+    width: 190px;
+    .service_list {
+        margin-left: -1px;
+        width: 192px;
+        height: 210px;
+        overflow: hidden;
+        .service_item {
+            position: relative;
+            overflow: hidden;
+            float: left;
+            width: 47px;
+            height: 69px;
+            border-top: 1px solid #e7e7e7;
+            border-left: 1px solid #e7e7e7;
+            text-align: center;
+            .service_lk {
+                display: block;
+                padding-top: 14px;
+                height: 55px;
+                -webkit-transition: all .15s ease-in-out;
+                transition: all .15s ease-in-out;
+                .service_corner {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 13px;
+                    height: 16px;
+                    font-size: 12px;
+                    line-height: 12px;
+                    text-align: center;
+                    background: #e01121;
+                    color: #fff;
+                    -webkit-transition: all .2s ease;
+                    transition: all .2s ease;
+                    .service_corner_txt {
+                        vertical-align: top;
+                    }
+                    .service_corner_ico {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        font-size: 0;
+                        line-height: 0;
+                        border: solid;
+                        border-width: 2px 6px;
+                        border-color: #e01121 #e01121 #fff;
+                    }
+                }
+                .service_ico {
+                    display: block;
+                    background-image: url(../images/sprite_fs@1x.png);
+                    background-position: 0 -88px;
+                    background-size: 156px 148px;
+                    background-repeat: no-repeat;
+                    width: 24px;
+                    height: 24px;
+                    margin: 0 auto;
+                }
+                .service_txt {
+                    height: 22px;
+                    line-height: 22px;
+                    border-top: 2px solid #fff;
+                    display: block;
+                    color: #666;
+                }
+            }
+        }
+    }
+}

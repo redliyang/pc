@@ -1,0 +1,200 @@
+#squares-hotel {
+    margin: 0 auto;
+    width: 190px;
+    height: 186px;
+    color: #666;
+    font-family: Arial;
+}
+
+// squares-tab
+#squares-hotel .squares-tab {
+    padding: 15px 5px 0;
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    li {
+        float: left;
+        position: relative;
+        display: inline;
+        padding: 0 15px;
+        line-height: 16px;
+        *line-height: 18px;
+        white-space: nowrap;
+        height: 21px;
+        margin-right: 3px;
+        *margin-right: 2px;
+        width: auto;
+        border: 0;
+        overflow: auto;
+        cursor: default;
+        &.last {
+            margin-right: 0;
+        }
+        &.current {
+            background: url(../images/iframe-san-new.png) center 0 no-repeat;
+            a {
+                color: #fff;
+            }
+        }
+        a {
+            text-decoration: none;
+            line-height: 18px;
+            display: inline;
+            padding-top: 0;
+            text-align: left
+        }
+    }
+}
+
+// squares-main
+#squares-hotel .squares-main {
+    padding: 5px 10px 0;
+    position: relative;
+    zoom: 1;
+    height: 138px;
+    .squares-content {
+        height: 138px;
+        width: 180px;
+//      overflow: hidden;
+        position: relative;
+        zoom: 1;
+        .tab-content {
+            width: 696px;
+            height: 138px;
+//          overflow: hidden;
+            .hotel-content {
+                float: left;
+                display: inline;
+                height: 138px;
+                width: 190px;
+                border: 0;
+                overflow: hidden;
+                cursor: default;
+                .city-area {
+                    float: left;
+                    display: inline;
+                    width: 190px;
+                    height: 23px;
+                    margin-bottom: 5px;
+                    position: relative;
+                    zoom: 1;
+                    _width: auto;
+                    _height: auto
+                }
+            }
+        }
+    }
+}
+
+
+#squares-hotel .city-area .end-date,
+#squares-hotel .city-area .select-area,
+#squares-hotel .city-area .start-city,
+#squares-hotel .city-area .start-date {
+    width: 96px;
+    height: 21px;
+    line-height: 21px;
+    border: 1px solid #ccc;
+    padding: 0;
+    color: #666;
+    padding-left: 72px;
+    font-family: inherit;
+    &:hover {
+        border-color: #338fff
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+
+#squares-hotel .city-area .end-date,
+#squares-hotel .city-area .start-date {
+    font-family: verdana
+}
+
+#squares-hotel .city-area .area-title {
+    height: 21px;
+    line-height: 21px;
+    color: #999;
+    background: #f5f5f5;
+    position: absolute;
+    top: 1px;
+    *top: 2px;
+    left: 1px;
+    width: 62px;
+    text-align: center
+}
+#squares-hotel .city-area .select-area {
+    padding-left: 0;
+    width: 168px;
+    text-align: center
+}
+
+
+
+#squares-hotel .select-date {
+    margin-bottom: 4px;
+    height: 56px
+}
+
+#squares-hotel .search-jp {
+    height: 26px;
+    .search-hotel-btn {
+        float: left;
+        width: 70px;
+        height: 25px;
+        line-height: 25px;
+        color: #fff;
+        text-align: center;
+        background-color: #e01222;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        margin-right: 5px;
+        padding: 0
+    }
+    .gn-word-ad {
+        display: inline-block;
+        width: 105px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        .search-tip {
+            outline: 0;
+            color: #527cdb;
+            line-height: 25px;
+            display: inline;
+            padding-top: 0;
+            text-align: left;
+            &:hover {
+                color: #c81623
+            }
+        }
+    }
+}
+
+
+
+
+
+
+#squares-hotel .hotel-ads {
+    width: 168px;
+    padding: 5px 9px 0 0;
+    a {
+        display: inline;
+        width: auto;
+        height: auto;
+        padding: 0;
+        line-height: normal;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
+        img {
+            width: 80px!important;
+            height: 120px!important
+        }
+    }
+}

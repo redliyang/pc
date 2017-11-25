@@ -1,0 +1,110 @@
+/*侧边栏*/
+
+.toolbar-wrap {
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9990;
+    width: 0;
+    height: 100%;
+}
+.toolbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-right: 6px solid #7a6e6e;
+    box-sizing: border-box;
+}
+.toolbar-tabs {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 35px;
+    transform: translateY(-50%);
+}
+.toolbar-footer {
+    position: absolute;
+    bottom: -1px;
+    right: 0px;
+    width: 35px;
+}
+.toolbar-tabs-item {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+.toolbar-tabs-item .tab-ico {
+    width: 34px;
+    height: 35px;
+    margin-left: 1px;
+    position: relative;
+    z-index: 2;
+    background-color: #7a6e6e;
+    _display: block;
+}
+.toolbar-tabs-item .tab-ico {
+    display: inline-block;
+    background-image: url(../images/toolbar.png);
+    _background-image: url(../images/toolbar-png8.png);
+    background-repeat: no-repeat;
+}
+.toolbar-tabs-cart .tab-ico {
+    background-position: -50px 0;
+}
+.toolbar-tabs-follow .tab-ico {
+    background-position: -50px -50px;
+}
+.toolbar-tabs-history .tab-ico {
+    background-position: -50px -100px;
+}
+.toolbar-tabs-message .tab-ico {
+    background-position: -190px -150px;
+}
+.toolbar-tabs-jimi .tab-ico {
+    background-position: -50px -150px;
+}
+.toolbar-tabs-top .tab-ico {
+    background-position: -50px -250px;
+}
+.toolbar-tabs-feedback .tab-ico {
+    background-position: -50px -300px;
+}
+.toolbar-tabs-item:hover .tab-ico {
+    background-color: #c81623;
+}
+.toolbar-tabs-item .tab-text {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font: 12px/35px "Microsoft YaHei";
+    text-align: center;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    -webkit-transition: all .3s ease-in-out .1s;
+    -moz-transition: all .3s ease-in-out .1s;
+    transition: all .3s ease-in-out .1s;
+    z-index: 1;
+    _display: none;
+}
+.toolbar-tabs-item:hover .tab-text {
+    width: 70px;
+    right: 34px;
+    background-color: #c81623;
+    _display: block;
+}
+.toolbar-footer .toolbar-tabs-top:hover .tab-text, .toolbar-footer .toolbar-tabs-feedback:hover .tab-text {
+    width: 48px;
+}

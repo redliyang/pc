@@ -1,0 +1,246 @@
+#squares-jipiao {
+    width: 190px;
+    height: 186px;
+    color: #666;
+    font-family: Arial;
+}
+
+// .squares-tab
+#squares-jipiao {
+    .squares-tab {
+        padding: 15px 5px 0;
+        position: static;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        li {
+            float: left;
+            position: relative;
+            display: inline;
+            padding: 0 2px;
+            line-height: 16px;
+            *line-height: 18px;
+            white-space: nowrap;
+            height: 21px;
+            margin-right: 3px;
+            *margin-right: 2px;
+            width: auto;
+            border: 0;
+            overflow: auto;
+            cursor: default;
+            &.last {
+                margin-right: 0;
+            }
+            &.current {
+                background: url(../images/iframe-san-new.png) center 0 no-repeat;
+                a {
+                    color: #fff
+                }
+            }
+            a {
+                text-decoration: none;
+                line-height: 18px;
+                display: inline;
+                padding-top: 0;
+                text-align: left
+            }
+        }
+    }   
+}
+
+//  squares-main
+#squares-jipiao {
+    .squares-main {
+        padding: 5px 10px 0;
+        position: relative;
+        zoom: 1;
+        height: 138px;
+        .squares-content {
+            height: 138px;
+            width: 180px;
+//          overflow: hidden;
+            position: relative;
+            zoom: 1;
+            .tab-content {
+                width: 696px;
+                height: 138px;
+//              overflow: hidden;
+                .jp-content {
+                    float: left;
+                    display: inline;
+                    height: 138px;
+                    width: 190px;
+                    border: 0;
+                    overflow: hidden;
+                    cursor: default
+                }
+            }
+        }
+    }
+}
+
+// squares-main-select-type
+#squares-jipiao .select-type {
+    margin-bottom: 10px;
+    _height: 15px;
+    _overflow: hidden;
+    label {
+        float: left;
+        display: inline;
+        margin-right: 15px;
+        height: 15px;
+        line-height: 15px;
+        input {
+            margin: 0;
+            margin-right: 3px;
+            margin-left: 3px;
+            vertical-align: middle;
+            _display: inline;
+            _margin-top: -3px;
+            _margin-right: -5px
+        }
+    }
+}
+
+// squares-main-select-city/date
+#squares-jipiao .city-area, 
+#squares-jipiao .date-area {
+    float: left;
+    display: inline;
+    width: 130px;
+    height: 23px;
+    margin-bottom: 5px;
+    position: relative;
+    zoom: 1;
+    _width: auto;
+    _height: auto;
+    .end-city, 
+    .start-city, 
+    .end-date, 
+    .start-date {
+        width: 76px;
+        height: 21px;
+        line-height: 21px;
+        border: 1px solid #ccc;
+        padding: 0;
+        color: #666;
+        padding-left: 52px;
+        font-family: inherit;
+        &:hover {
+            border-color: #338FFF;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    .area-title {
+        height: 21px;
+        line-height: 21px;
+        color: #999;
+        background: #f5f5f5;
+        position: absolute;
+        top: 1px;
+        *top: 2px;
+        left: 1px;
+        width: 40px;
+        text-align: center
+    }
+}
+#squares-jipiao .date-area .end-date {
+    display: none
+}
+
+#squares-jipiao .date-area .end-date, 
+#squares-jipiao .date-area .start-date {
+    font-family: verdana
+}
+
+
+#squares-jipiao .change-city {
+    position: relative;
+    float: left;
+    display: inline;
+    width: 16px;
+    height: 16px;
+    top: 18px;
+    background: url(../images/change-city-new.jpg) no-repeat 0 0;
+    margin-left: 9px;
+    cursor: pointer;
+    _font-size: 200px;
+    _overflow: hidden;
+    &:hover {
+        background: url(../images/change-city-new-hover.png) no-repeat 0 0
+    }
+}
+
+
+#squares-jipiao .select-city {
+    _height: 27px;
+    _overflow: hidden
+}
+#squares-jipiao .select-date {
+    margin-bottom: 4px
+}
+#squares-jipiao .select-date .date-area {
+    *margin-top: 5px;
+}
+
+
+// jp
+#squares-jipiao .search-jp {
+    height: 26px;
+    .search-jp-btn {
+        float: left;
+        width: 70px;
+        height: 25px;
+        line-height: 25px;
+        color: #fff;
+        text-align: center;
+        background-color: #e01222;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        margin-right: 5px;
+        padding: 0
+    }
+    .gj-word-ad,
+    .gn-word-ad {
+        display: inline-block;
+        width: 105px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        .search-tip {
+            outline: 0;
+            color: #527cdb;
+            line-height: 25px;
+            display: inline;
+            padding-top: 0;
+            text-align: left;
+            &:hover {
+                color: #C81623;
+            }
+        }
+    }
+}
+
+// ads
+#squares-jipiao .jp-ads {
+    width: 168px;
+    padding: 5px 9px 0 0;
+    a {
+        display: inline;
+        width: auto;
+        height: auto;
+        padding: 0;
+        line-height: normal;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
+        img {
+            width: 79px!important;
+            height: 119px!important
+        }
+    }
+}
+

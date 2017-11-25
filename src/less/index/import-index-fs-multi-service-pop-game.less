@@ -1,0 +1,237 @@
+#squares-game {
+    width: 190px;
+    height: 180px;
+    color: #666;
+    font-family: Arial, Verdana, "b8bf53";
+}
+
+// tab
+#squares-game .squares-tab {
+    padding: 15px 10px 0;
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    li {
+        height: 21px;
+        margin-right: 10px;
+        padding: 0 10px;
+        float: left;
+        display: inline;
+        position: relative;
+        line-height: 16px;
+        *line-height: 18px;
+        white-space: nowrap;
+        width: auto;
+        border: 0;
+        overflow: auto;
+        cursor: default;
+        &.current {
+            background: url(../images/iframe-san-new.png) center 0 no-repeat;
+            a {
+                color: #ffffff;
+            }
+        }
+        a {
+            text-decoration: none;
+            line-height: 18px;
+            display: inline;
+            padding-top: 0;
+            text-align: left;
+        }
+    }
+}
+
+// main
+
+#squares-game .squares-main {
+    padding: 10px 10px 0;
+    position: relative;
+    zoom: 1;
+    height: 135px;
+    .squares-content {
+        height: 135px;
+        width: 180px;
+        // overflow: hidden;
+        position: relative;
+        zoom: 1;
+        .tab-content {
+            width: 696px;
+            height: 135px;
+            overflow: hidden;
+            .jp-content {
+                height: 135px;
+                width: 180px;
+                float: left;
+                display: inline;
+                border: 0;
+                // overflow: hidden;
+                cursor: default;
+            }
+        }
+    }
+}
+
+
+#squares-game .select-type {
+    margin-bottom: 15px;
+    line-height: 1;
+    label {
+        height: 15px;
+        margin-right: 5px;
+        line-height: 15px;
+        input {
+            margin: 0;
+            vertical-align: middle
+        }
+    }
+}
+
+#squares-game .select-city {
+    margin-bottom: 8px;
+    _height: 27px;
+    _overflow: hidden
+}
+#squares-game .city-area {
+    height: 25px;
+    position: relative;
+    zoom: 1;
+    .start-city {
+        width: 121px;
+        height: 21px;
+        border: 1px solid #ccc;
+        padding: 0;
+        padding-left: 44px;
+        background: #fff url(../images/select-icon.png) no-repeat 154px center;
+        line-height: 21px;
+        color: #666;
+        font-family: verdana;
+        &:hover {
+            border-color: #338fff;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    .area-title {
+        height: 21px;
+        width: 40px;
+        position: absolute;
+        top: 1px;
+        *top: 2px;
+        left: 1px;
+        line-height: 21px;
+        color: #999;
+        background: #f5f5f5;
+        text-align: center;
+    }
+}
+
+
+
+#squares-game .select-date {
+    margin-bottom: 15px
+}
+#squares-game .date-area {
+    .area-title {
+        height: 21px;
+        margin-right: 5px;
+        display: inline-block;
+        float: left;
+        line-height: 21px;
+        color: #666;
+        text-align: center;
+    }
+    .start-date {
+        float: left;
+        width: 45px;
+        height: 21px;
+        margin-right: 5px;
+        line-height: 21px;
+        border: 1px solid #ccc;
+        padding: 0;
+        color: #666;
+        padding-left: 5px;
+        font-family: inherit;
+        background: #fff url(../images/select-icon.png) no-repeat 41px center;
+        &:hover {
+            border-color: #336fff;
+        }
+        &:focus {
+            outline: 0;
+        }
+        
+    }
+
+}
+
+#squares-game .game-money {
+    float: left;
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    color: #c81623;
+    font-family: verdana;
+    margin-right: 30px;
+}
+
+
+
+
+
+#squares-game .search-jp {
+    height: 26px;
+    .search-jp-btn {
+        float: left;
+        *display: inline;
+        *zoom: 1;
+        width: 68px;
+        height: 23px;
+        margin-right: 5px;
+        line-height: 23px;
+        color: #fff;
+        text-align: center;
+        background-color: #e01222;
+        border: 1px solid #e01222;
+        display: inline-block;
+        padding: 0
+    }
+}
+
+
+#squares-game .search-jp .search-tip {
+    position: relative;
+    top: 4px;
+    outline: 0;
+    color: #527cdb;
+    display: inline-block;
+    padding-top: 0;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+    &:hover {
+        color: #c81623;
+    }
+}
+
+
+#squares-game .jp-ads {
+    padding-top: 5px;
+    width: 170px;
+    a {
+        display: inline;
+        width: auto;
+        height: auto;
+        padding: 0;
+        line-height: normal;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
+        img {
+            width: 80px!important;
+            height: 110px!important
+        }
+    }
+}
