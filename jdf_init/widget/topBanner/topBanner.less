@@ -1,0 +1,36 @@
+.iconfont_close {
+    width: 20px; 
+    height: 20px; 
+    position: absolute; 
+    right: 20%; 
+    top: 5px; 
+    color: #FFF; 
+    background: rgb(45,45,45); 
+    opacity: .3; 
+    filter: alpha(opacity=30);  
+    font: bold 14px/20px 'Microsoft Yahei'; 
+    text-align: center; 
+    cursor:pointer;
+    &::after {
+        content: '';
+        width: 15px;
+        height: 2px;
+        position: absolute;
+        left: 2px;
+        top: 9px;
+        background-color: #fff;
+        transform-origin:center center;
+        transform:rotate(135deg);
+    }
+    &::before {
+        content: '';
+        width: 15px;
+        height: 2px;
+        position: absolute;
+        left: 2px;
+        top: 9px;
+        background-color: #fff;
+        transform-origin:center center;
+        transform:rotate(45deg);
+    }
+}

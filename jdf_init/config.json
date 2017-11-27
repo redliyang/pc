@@ -1,0 +1,10 @@
+{
+	"host": "ftpServerIp",
+	"user": "",
+	"password": "",
+	"projectPath": "",
+	"build": {
+		"less":true,
+		"autoprefixer":true
+	}
+}
