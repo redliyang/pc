@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>shortCut</title>
+<link rel="stylesheet" type="text/css" href="//misc.360buyimg.com/jdf/1.0.0/unit/ui-base/1.0.0/ui-base.css" media="all" />
+<script type="text/javascript" src="//misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="//misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+</head>
+<body>
+
 <div id="shortcut">
     <div class="w">
         <ul class="fl">
@@ -49,18 +60,17 @@
                 <div class="dd dorpdown-layer">
                     <div class="dd-spacer"></div>
                     #foreach( $myjdlist in $myjd.dorpdown-layer )
-                        <div class="myjdlist myjdlist$velocityCount">
-                            #foreach( $fore in $myjdlist )
-                                <div class="fore$velocityCount">
-                                    #foreach( $item in $fore )
-                                        <div class="item">
-                                            <a href="javascript:void(0)" target="_blank">$item.cont
-                                                <span id="$item.id"></span></a>
-                                        </div>
-                                    #end
-                                </div>
+                    <div class="myjdlist myjdlist$velocityCount">
+                        #foreach( $fore in $myjdlist )
+                        <div class="fore$velocityCount">
+                            #foreach( $item in $fore )
+                            <div class="item">
+                                <a href="javascript:void(0)" target="_blank">$item.cont<span id="$item.id"></span></a>
+                            </div>
                             #end
                         </div>
+                        #end
+                    </div>
                     #end
                 </div>
             </li>
@@ -78,21 +88,15 @@
             </li>
             <li class="spacer"></li>
             <li class="fore8 dorpdown" id="ttbar-serv">
-                <div class="dt cw-icon">$serv.dorpdown<i class="iconfont"></i>
+                <div class="dt cw-icon">客户服务<i class="iconfont"></i>
                     <i class="ci-right">
                         <s>◇</s>
                     </i>
                 </div>
                 <div class="dd dorpdown-layer">
                     <div class="dd-spacer"></div>
-                    #foreach( $itemAll in $serv.dorpdown-layer )
-                        <div class="item-$itemAll.dtClassName">$itemAll.dt</div>
-                        #foreach( $item in $itemAll.dd )
-                            <div class="item">
-                                <a href="javascript:void(0)" target="_blank" true="">$item</a>
-                            </div>
-                        #end
-                    #end
+                    <div class="dd-inner">
+                        <span class="loading"></span></div>
                 </div>
             </li>
             <li class="spacer"></li>
@@ -131,4 +135,5 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div></body>
+</html>

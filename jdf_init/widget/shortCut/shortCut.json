@@ -18,18 +18,20 @@
         "dorpdown": "我的京东",
         "dorpdown-layer": [
             [
-                [{
-                    "id": "num-unfinishedorde",
-                    "cont": "待处理订单"
-                },
-                {
-                    "id": "",
-                    "cont": "返修退换货"
-                },
-                {
-                    "id": "num-reduction",
-                    "cont": "降价商品"
-                }],
+                [
+                    {
+                        "id": "num-unfinishedorde",
+                        "cont": "待处理订单"
+                    },
+                    {
+                        "id": "",
+                        "cont": "返修退换货"
+                    },
+                    {
+                        "id": "num-reduction",
+                        "cont": "降价商品"
+                    }
+                ],
                 [
                     {
                         "id": "num-tip",
@@ -67,6 +69,37 @@
                     }
                 ]
             ]
+        ]
+    },
+    "serv": {
+        "dorpdown": "客户服务",
+        "dorpdown-layer": [
+            {
+                "dt": "客户",
+                "dtClassName": "client",
+                "dd": [
+                    "帮助中心",
+                    "售后服务",
+                    "在线客服",
+                    "意见建议",
+                    "电话客服",
+                    "客服邮箱",
+                    "金融咨询",
+                    "售全球客服"
+                ]
+            },
+            {
+                "dt": "商户",
+                "dtClassName": "business",
+                "dd": [
+                    "合作招商",
+                    "学习中心",
+                    "商家后台",
+                    "京麦工作台",
+                    "商家帮助",
+                    "规则平台"
+                ]
+            }
         ]
     },
     "navs": {
