@@ -1,19 +1,4 @@
 {
-    "name": "vmname",
-    "allProducts": [
-        {
-            "title": "风",
-            "from": "中国"
-        },
-        {
-            "title": "应用",
-            "from": "河北"
-        }
-    ],
-    "myProducts": {
-        "age": 9,
-        "from": "cn"
-    },
     "myjd": {
         "dorpdown": "我的京东",
         "dorpdown-layer": [
@@ -757,6 +742,14 @@
                 "圣方济各堂区",
                 "路氹城"
             ]
+        },
+        {
+            "proID": 1,
+            "name": "钓鱼岛"
+        },
+        {
+            "proID": 1,
+            "name": "海外"
         }
     ]
 }
