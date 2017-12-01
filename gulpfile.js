@@ -26,7 +26,7 @@ gulp.task('html', function () {
         minifyJS: true,//压缩页面JS  
         minifyCSS: true//压缩页面CSS  
     };
-    gulp.src('src/index.html')
+    gulp.src('src/*.html')
         .pipe(changed('dist', { hasChanged: changed.compareSha1Digest }))
         .pipe(htmlMin(options))
         .pipe(gulp.dest('dist'))

@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body id="top">
+	<!-- top-banner start -->
+	<div id="J_event" style="position: relative; z-index: 30; background-color:#f5245b;">
+		<div class="grid_c1 w" style="position: relative;">
+			<a id="J_event_lk" href="#" target="_blank" style="display: block; width: 100%; height: 80px; background: url(./images/js.jpg) no-repeat 50% 0;">
+			</a>
+			<i id="J_event_close" class="iconfont_close"></i>
+		</div>
+	</div>
+	<!-- top-banner end -->
+	<!-- shortcut start -->
+	<div id="shortcut">
+		<div class="w">
+			<!-- 左边 st -->
+			<ul class="fl">
+				<!-- mycity s -->
+				<li class="fore-mycity dorpdown" id="ttbar-mycity">
+					<div class="dt cw-icon">
+						<i class="iconfont_geoLacation"></i>
+						<span class="ui-areamini-text" data-id="1" title="北京">北京</span>
+					</div>
+					<div class="dd dorpdown-layer">
+						<div class="dd-spacer"></div>
+							<div class="item"><a class="selected" data-id="1" href="javascript:void(0)">北京</a></div><div class="item"><a data-id="2" href="javascript:void(0)">上海</a></div><div class="item"><a data-id="3" href="javascript:void(0)">天津</a></div><div class="item"><a data-id="4" href="javascript:void(0)">重庆</a></div><div class="item"><a data-id="5" href="javascript:void(0)">河北</a></div><div class="item"><a data-id="6" href="javascript:void(0)">山西</a></div><div class="item"><a data-id="7" href="javascript:void(0)">河南</a></div><div class="item"><a data-id="8" href="javascript:void(0)">辽宁</a></div><div class="item"><a data-id="9" href="javascript:void(0)">吉林</a></div><div class="item"><a data-id="10" href="javascript:void(0)">黑龙江</a></div><div class="item"><a data-id="11" href="javascript:void(0)">内蒙古</a></div><div class="item"><a data-id="12" href="javascript:void(0)">江苏</a></div><div class="item"><a data-id="13" href="javascript:void(0)">山东</a></div><div class="item"><a data-id="14" href="javascript:void(0)">安徽</a></div><div class="item"><a data-id="15" href="javascript:void(0)">浙江</a></div><div class="item"><a data-id="16" href="javascript:void(0)">福建</a></div><div class="item"><a data-id="17" href="javascript:void(0)">湖北</a></div><div class="item"><a data-id="18" href="javascript:void(0)">湖南</a></div><div class="item"><a data-id="19" href="javascript:void(0)">广东</a></div><div class="item"><a data-id="20" href="javascript:void(0)">广西</a></div><div class="item"><a data-id="21" href="javascript:void(0)">江西</a></div><div class="item"><a data-id="22" href="javascript:void(0)">四川</a></div><div class="item"><a data-id="23" href="javascript:void(0)">海南</a></div><div class="item"><a data-id="24" href="javascript:void(0)">贵州</a></div><div class="item"><a data-id="25" href="javascript:void(0)">云南</a></div><div class="item"><a data-id="26" href="javascript:void(0)">西藏</a></div><div class="item"><a data-id="27" href="javascript:void(0)">陕西</a></div><div class="item"><a data-id="28" href="javascript:void(0)">甘肃</a></div><div class="item"><a data-id="29" href="javascript:void(0)">青海</a></div><div class="item"><a data-id="30" href="javascript:void(0)">宁夏</a></div><div class="item"><a data-id="31" href="javascript:void(0)">新疆</a></div><div class="item"><a data-id="52993" href="javascript:void(0)">港澳</a></div><div class="item"><a data-id="32" href="javascript:void(0)">台湾</a></div><div class="item"><a data-id="84" href="javascript:void(0)">钓鱼岛</a></div><div class="item"><a data-id="53283" href="javascript:void(0)">海外</a></div>
+					</div>
+				</li>
+			</ul>
+			<!-- 左边 en -->
+			
+
+			<!-- 右边 -->
+			<ul class="fr">
+			    <li class="fore1 icon-plus-state0" id="ttbar-login">
+			        <a class="link-login" href="javascript:login();">你好，请登录</a>
+			        <a class="link-regist style-red" href="javascript:regist();">免费注册</a>
+			    </li>
+			    <li class="spacer"></li>
+			    <li class="fore2">
+			        <div class="dt">
+			            <a href="#" target="_blank">我的订单</a>
+			        </div>
+			    </li>
+			    <li class="spacer"></li>
+			    <!-- myjd s -->
+			    <li class="fore-myjd dorpdown"  data-load="1" id="ttbar-myjd">
+			        <div class="dt cw-icon">
+			            <a href="//home.jd.com/" target="_blank">我的京东</a>
+			            <i class="ci-right"><s>◇</s></i>
+			        </div>
+			        <div class="dd dorpdown-layer">
+			            <div class="dd-spacer"></div>
+			            <div class="myjdlist">
+			                <div class="fore1">
+			                    <div class="item"><a href="#" target="_blank">待处理订单<span id="num-unfinishedorder"></span></a></div>
+			                    <div class="item"><a href="#" target="_blank">返修退换货</a></div>
+			                    <div class="item"><a href="#" target="_blank">降价商品<span id="num-reduction"></span></a></div>
+			                </div>
+			                <div class="fore2">
+			                    <div class="item"><a href="#" target="_blank">消息<span id="num-tip"></span></a></div>
+			                    <div class="item"><a href="#" target="_blank">我的问答<span id="num-consultation"></span></a></div>
+			                    <div class="item"><a href="#" target="_blank">我的关注</a></div>
+			                </div>
+			            </div>
+			            <div class="myjdlist myjdlist_2">
+			                <div class="fore1">
+			                    <div class="item"><a href="#" target="_blank">我的京豆</a></div>
+			                    <div class="item baitiao"><a href="#" target="_blank">我的白条</a></div>
+			                </div>
+			                <div class="fore2">
+			                    <div class="item"><a href="#" target="_blank">我的优惠券<span id="num-ticket"></span></a></div>
+			                    <div class="item"><a href="#" target="_blank">我的理财</a></div>
+			                </div>
+			            </div>
+			        </div>
+			    </li>
+			    <!-- myjd e -->
+			    <li class="spacer">
+			    </li>
+			    <li class="fore4">
+			        <div class="dt"><a href="#" target="_blank">京东会员</a></div>
+			    </li>
+			    <li class="spacer">
+			    </li>
+			    <li class="fore5">
+			        <div class="dt"><a href="#" target="_blank">企业采购</a> </div>
+			    </li>
+			    <li class="spacer">
+			    </li>
+			    <!-- serv s -->
+			    <li class="fore-serv dorpdown" data-load="1" id="ttbar-serv">
+			        <div class="dt cw-icon">
+			            客户服务
+			            <i class="iconfont"></i>
+			            <i class="ci-right"><s>◇</s></i>
+			        </div>
+			        <div class="dd dorpdown-layer">
+			            <div class="dd-spacer"></div>
+			            <div class="item-client">客户</div>
+			            <div class="item"><a href="//help.jd.com/index.html" target="_blank" true="">帮助中心</a></div><div class="item"><a href="//myjd.jd.com/afs/indexNew.action?entry=2" target="_blank" true="">售后服务</a></div><div class="item"><a href="//chat.jd.com/jdchat/custom.action " target="_blank" true="">在线客服</a></div><div class="item"><a href="//myjd-crm.jd.com/opinion/orderList.action" target="_blank" true="">意见建议</a></div><div class="item"><a href="//myjd-crm.jd.com/appoint/telebooking.action" target="_blank" true="">电话客服</a></div><div class="item"><a href="//www.jd.com/contact/service.html" target="_blank" true="">客服邮箱</a></div><div class="item"><a href="https://jrhelp.jd.com/" target="_blank" true="">金融咨询</a></div><div class="item"><a href="//chat.jd.com/jd/chat?entry=jd_web_joybuy" target="_blank" true="">售全球客服</a></div>
+			            <div class="item-business">商户</div>
+			            <div class="item"><a href="//vc.jd.com/cooperation.html " target="_blank" true="">合作招商</a></div><div class="item"><a href="//xue.jd.com/" target="_blank" true="">学习中心</a></div><div class="item"><a href="//shop.jd.com/" target="_blank" true="">商家后台</a></div><div class="item"><a href="//jm.jd.com/index/index.html" target="_blank" true="">京麦工作台</a></div><div class="item"><a href="//helpcenter.jd.com/venderportal/index.html" target="_blank" true="">商家帮助</a></div><div class="item"><a href="//rule.jd.com/rule/index.action" target="_blank" true="">规则平台</a></div>
+			        </div>
+			    </li>
+			    <!-- serv e -->
+			    <li class="spacer">
+			    </li>
+			    <!-- navs s -->
+			    <li class="fore-navs dorpdown" data-load="1" id="ttbar-navs">
+			        <div class="dt cw-icon">
+			            网站导航
+			            <i class="ci-right"><s>◇</s></i>
+			        </div>
+			       <div class="dd dorpdown-layer"><div class="dd-spacer"></div><dl class="fore1">                    <dt>特色主题</dt>                    <dd><div class="item"><a href="//try.jd.com/" target="_blank">京东试用</a></div><div class="item"><a href="//jr.jd.com/" target="_blank">京东金融</a></div><div class="item"><a href="//global.jd.com/" target="_blank">全球售</a></div><div class="item"><a href="https://www.joybuy.com/  " target="_blank">国际站</a></div><div class="item"><a href="//vip.jd.com/" target="_blank">京东会员</a></div><div class="item"><a href="//xinpin.jd.com/" target="_blank">京东预售</a></div><div class="item"><a href="//what.jd.com/" target="_blank">买什么</a></div><div class="item"><a href=" https://www.jd.ru/" target="_blank">俄语站</a></div><div class="item"><a href="//diy.jd.com/" target="_blank">装机大师</a></div><div class="item"><a href=" https://pingce.jd.com/index.html" target="_blank">0元评测</a></div><div class="item"><a href="//ding.jd.com/" target="_blank">定期送</a></div><div class="item"><a href="//cn.jd.com/" target="_blank">港澳售</a></div><div class="item"><a href="//a.jd.com/" target="_blank">优惠券</a></div><div class="item"><a href="//miaosha.jd.com/" target="_blank">秒杀</a></div><div class="item"><a href="//red.jd.com/" target="_blank">闪购</a></div><div class="item"><a href="https://www.jd.id/" target="_blank">印尼站</a></div><div class="item"><a href="https://ft.jd.com" target="_blank">京东金融</a></div><div class="item"><a href="//jr.jd.com/buy/index" target="_blank">In货推荐</a></div><div class="item"><a href="https://up.jd.com/?entrance=pc_dh_a" target="_blank">陪伴计划</a></div><div class="item"><a href="//join.jd.com/app/welcome.html#/" target="_blank">出海招商</a></div></dd>                  </dl><dl class="fore2">                    <dt>行业频道</dt>                    <dd><div class="item"><a href="//shouji.jd.com/" target="_blank">手机</a></div><div class="item"><a href="https://shuma.jd.com/" target="_blank">智能数码</a></div><div class="item"><a href="//3c.jd.com/" target="_blank">玩3C</a></div><div class="item"><a href="//diannao.jd.com/" target="_blank">电脑办公</a></div><div class="item"><a href="https://jiadian.jd.com/" target="_blank">家用电器</a></div><div class="item"><a href="//smart.jd.com/" target="_blank">京东智能</a></div><div class="item"><a href="//channel.jd.com/fashion.html" target="_blank">服装城</a></div><div class="item"><a href="//channel.jd.com/beauty.html" target="_blank">美妆馆</a></div><div class="item"><a href="//channel.jd.com/jiazhuang.html" target="_blank">家装城</a></div><div class="item"><a href="//baby.jd.com/" target="_blank">母婴</a></div><div class="item"><a href="//channel.jd.com/chaoshi.html" target="_blank">食品</a></div><div class="item"><a href="//channel.jd.com/sports.html" target="_blank">运动户外</a></div><div class="item"><a href="//nong.jd.com/" target="_blank">农资频道</a></div><div class="item"><a href="http://car.jd.com" target="_blank">整车</a></div><div class="item"><a href="//book.jd.com/" target="_blank">图书</a></div></dd>                  </dl><dl class="fore3">                    <dt>生活服务</dt>                    <dd><div class="item"><a href="//z.jd.com/" target="_blank">京东众筹</a></div><div class="item"><a href="//www.baitiao.com" target="_blank">白条</a></div><div class="item"><a href="//m.jr.jd.com/helppage/downApp/jrAppPromote.html" target="_blank">京东金融App</a></div><div class="item"><a href="//trade.jr.jd.com/myxjk/jrbincome.action" target="_blank">京东小金库</a></div><div class="item"><a href="//licai.jd.com/" target="_blank">理财</a></div><div class="item"><a href="https://smarthome.jd.com/" target="_blank">智能家电</a></div><div class="item"><a href="//chongzhi.jd.com/" target="_blank">话费</a></div><div class="item"><a href="//jiaofei.jd.com/" target="_blank">水电煤</a></div><div class="item"><a href="//caipiao.jd.com/" target="_blank">彩票</a></div><div class="item"><a href="//trip.jd.com/" target="_blank">旅行</a></div><div class="item"><a href="//jipiao.jd.com/" target="_blank">机票酒店</a></div><div class="item"><a href="//movie.jd.com/" target="_blank">电影票</a></div><div class="item"><a href="//daojia.jd.com/html/welcome.html" target="_blank">京东到家</a></div><div class="item"><a href="//try-smart.jd.com/" target="_blank">京东众测</a></div><div class="item"><a href="//game.jd.com/" target="_blank">游戏</a></div></dd>                  </dl><dl class="fore4">                    <dt>更多精选</dt>                    <dd><div class="item"><a href="//vc.jd.com/cooperation.html " target="_blank">合作招商</a></div><div class="item"><a href="//mobile.jd.com/index.do" target="_blank">京东通信</a></div><div class="item"><a href="//o.jd.com/market/index.action" target="_blank">京东E卡</a></div><div class="item"><a href="//b.jd.com/" target="_blank">企业采购</a></div><div class="item"><a href="//fw.jd.com/" target="_blank">服务市场</a></div><div class="item"><a href="https://bg.jd.com/" target="_blank">办公生活馆</a></div><div class="item"><a href="//zhaomu.jd.com/XCDLzm.html" target="_blank">乡村招募</a></div><div class="item"><a href="//zhaomu.jd.com/intro.html" target="_blank">校园加盟</a></div><div class="item"><a href="//you.jd.com/index.html?entrance=jd_home" target="_blank">京友邦</a></div><div class="item"><a href="//sale.jd.com/act/Wjr0xYRh6Z.html " target="_blank">京东社区</a></div><div class="item"><a href="http://group.jd.com/site/20000121/20000032.htm" target="_blank">智能社区</a></div><div class="item"><a href="http://group.jd.com/index/20000001.htm" target="_blank">游戏社区</a></div><div class="item"><a href="//ipr.jd.com/edition" target="_blank">知识产权维权</a></div></dd>                  </dl></div>
+			    </li>
+			    <!-- navs e -->
+			    <li class="spacer">
+			    </li>
+			    <!-- mobile s -->
+			    <li class="fore-mobile dorpdown" id="J_mobile">
+			        <div class="dt mobile_txt">
+			            手机京东
+			        </div>
+			        <div class="mobile_static">
+			            <div class="mobile_static_qrcode">
+			            </div>
+			        </div>
+			        <div class="dd dorpdown-layer" id="J_mobile_pop">
+			            <div class="mobile_pop_item">
+			                <div class="mobile_pop_qrcode mobile_pop_qrcode_1"><img src="./images/qrcode_mobile.png"/></div>
+			                <div class="mobile_pop_info">
+			                    <h5 class="mobile_pop_tit"><a href="#" target="_blank">手机京东</a></h5>
+			                    <p class="mobile_pop_value">新人专享大礼包</p>
+			                    <p class="mobile_pop_device">
+			                        <a class="mobile_pop_device_lk mobile_pop_device_ios" href="#" target="_blank">APP Store</a>
+			                        <a class="mobile_pop_device_lk mobile_pop_device_and" href="#" target="_blank">安卓市场</a>
+			                        <a class="mobile_pop_device_lk mobile_pop_device_pad" href="#" target="_blank">APP Store</a>
+			                    </p>
+			                </div>
+			            </div>
+			            <div class="mobile_pop_item">
+			                <div class="mobile_pop_qrcode mobile_pop_qrcode_2"><img src="./images/qrcode_wechat.jpg"/></div>
+			                <div class="mobile_pop_info">
+			                    <h5 class="mobile_pop_tit">关注京东微信</h5>
+			                    <p class="mobile_pop_value">微信扫一扫关注<br>新粉最高180元<br>惊喜礼包</br></br></p>
+			                </div>
+			            </div>
+			            <div class="mobile_pop_item">
+			                <div class="mobile_pop_qrcode mobile_pop_qrcode_3"><img src="./images/qrcode_money.jpg"/></div>
+			                <div class="mobile_pop_info">
+			                    <h5 class="mobile_pop_tit"><a href="#" target="_blank">京东金融客户端</a></h5>
+			                    <p class="mobile_pop_value">新人专享大礼包</p>
+			                    <p class="mobile_pop_device">
+			                        <a class="mobile_pop_device_lk mobile_pop_device_ios" href="#" target="_blank">APP Store</a>
+			                        <a class="mobile_pop_device_lk mobile_pop_device_and" href="#" target="_blank">安卓市场</a>
+			                    </p>
+			                </div>
+			            </div>
+			        </div>
+			    </li>
+			    <!-- mobile e -->
+			</ul>
+		</div>
+	</div>
+	<!-- shortcut end -->
+
+	<!-- header start -->
+	<div id="header">
+	    <div class="w">
+	    	<!-- logo s -->
+	        <div class="logo" id="logo">
+	            <h1 class="logo_tit"><a class="logo_tit_lk" href="//www.jd.com">京东</a></h1>
+	        </div>
+	        <!-- logo e -->
+	        <!-- search s -->
+	        <div id="search">
+	            <div class="search-m">
+	            	<div class="search_logo"><a class="search_logo_lk" href="//www.jd.com">京东，多快好省</a></div>
+        	        <ul id="shelper"></ul>
+	                <div class="form">
+	                    <input accesskey="s" autocomplete="off" class="text" id="key" type="text">
+	                    <span class="photo-search-btn">
+	                        <form action="#" enctype="multipart/form-data" id="search-img-upload" method="post" target="search_upload">
+	                            <span class="upload-bg"></span>
+	                            <input accept="image/png,image/jpeg,image/jpg" class="upload-trigger" name="file" type="file"/>
+	                        </form>
+	                    </span>
+	                    <button class="button"><i class="iconfont_search"></i></button>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- search e -->
+	        <!-- shopping-cat s -->
+	        <div class="dorpdown" id="settleup">
+	            <div class="cw-icon">
+	                <i class="ci-count" id="shopping-amount">0</i>
+	                <i class="iconfont"></i>
+	                <a href="#" target="_blank" class="style-red">我的购物车</a>
+	            </div>
+	            <div class="dorpdown-layer">
+	            	<div class="dd-spacer"></div>
+	                <div id="J_cart_pop">
+	                    <div class="cart_empty">          
+	                        <i class="cart_empty_img"></i>          
+	                        购物车中还没有商品，赶紧选购吧！        
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- shopping-cat e -->
+	        <!-- search-hotswords s -->
+	        <div id="hotwords">
+	            <a class="style-red" href="#" target="_blank">5万京豆</a>
+	            <a href="#" target="_blank">女神特刊</a>
+	            <a href="#" target="_blank">养殖保健</a>
+	            <a href="#" target="_blank">型格男装</a>
+	            <a href="#" target="_blank">0元试用</a>
+	            <a href="#" target="_blank">电脑写字板</a>
+	            <a href="#" target="_blank">面包机</a>
+	            <a href="#" target="_blank">京东超市</a>
+	            <a href="#" target="_blank">润本蚊香液</a>
+	        </div>
+	        <!-- search-hotswords e -->
+	        <!-- header-navitems s-->
+	        <div id="navitems">
+	            <ul id="navitems-group">
+	                <li class="fore1"><a href="#" target="_blank">秒杀</a></li>
+	                <li class="fore2"><a href="#" target="_blank">优惠券</a></li>
+	                <li class="fore3"><a href="#" target="_blank">闪购</a></li>
+	                <li class="fore4"><a href="#" target="_blank">拍卖</a></li>
+	                <li class="spacer"></li>
+	                <li class="fore5"><a href="#" target="_blank">服装城</a></li>
+	                <li class="fore6"><a href="#" target="_blank">京东超市</a></li>
+	                <li class="fore7"><a href="#" target="_blank">生鲜</a></li>
+	                <li class="fore8"><a href="#" target="_blank">全球购</a></li>
+	                <li class="spacer"></li>
+	                <li class="fore9"><a href="#" target="_blank">京东金融</a></li>
+	            </ul>
+	        </div>
+	        <!-- header-navitems e -->
+	        <!-- treasure s -->
+	        <div id="treasure">
+	        	<a id="J_promo_lk" class="promo_lk" href="#" target="_blank"></a>
+	        </div>
+	        <!-- treasure e -->
+	    </div>
+	</div>
+	<!-- header end -->
+
+	<!-- fs start -->
+	<div class="fs">
+	    <div class="w fs_inner">
+	        <!-- nav s -->
+	        <div class="fs_col_nav">
+	            <div class="cate">
+	                <ul class="cate_menu">
+	                    <li class="cate_menu_item" data-index="1"><a class="cate_menu_lk" href="#" target="_blank">家用电器</a></li><li class="cate_menu_item" data-index="2"><a class="cate_menu_lk" href="#" target="_blank">手机</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">运营商</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">数码</a></li><li class="cate_menu_item" data-index="3"><a class="cate_menu_lk" href="#" target="_blank">电脑</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">办公</a></li><li class="cate_menu_item" data-index="4"><a class="cate_menu_lk" href="#" target="_blank">家居</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">家具</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">家装</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">厨具</a></li><li class="cate_menu_item" data-index="5"><a class="cate_menu_lk" href="#" target="_blank">男装</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">女装</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">童装</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">内衣</a></li><li class="cate_menu_item" data-index="6"><a class="cate_menu_lk" href="#" target="_blank">美妆个护</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">宠物</a></li><li class="cate_menu_item" data-index="7"><a class="cate_menu_lk" href="#" target="_blank">女鞋</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">箱包</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">钟表</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">珠宝</a></li><li class="cate_menu_item" data-index="8"><a class="cate_menu_lk" href="#" target="_blank">男鞋</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">运动</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">户外</a></li><li class="cate_menu_item" data-index="9"><a class="cate_menu_lk" href="#" target="_blank">汽车</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">汽车用品</a></li><li class="cate_menu_item" data-index="10"><a class="cate_menu_lk" href="#" target="_blank">母婴</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">玩具乐器</a></li><li class="cate_menu_item" data-index="11"><a class="cate_menu_lk" href="#" target="_blank">食品</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">酒类</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">生鲜</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="//china.jd.com" target="_blank">特产</a></li><li class="cate_menu_item" data-index="12"><a class="cate_menu_lk" href="#" target="_blank">礼品鲜花</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">农资绿植</a></li><li class="cate_menu_item" data-index="13"><a class="cate_menu_lk" href="#" target="_blank">医药保健</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">计生情趣</a></li><li class="cate_menu_item" data-index="14"><a class="cate_menu_lk" href="#" target="_blank">图书</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">音像</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">电子书</a></li><li class="cate_menu_item" data-index="15"><a class="cate_menu_lk" href="#" target="_blank">机票</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">酒店</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">旅游</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">生活</a></li><li class="cate_menu_item" data-index="16"><a class="cate_menu_lk" href="#" target="_blank">理财</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">众筹</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">白条</a> <span class="cate_menu_line">/</span> <a class="cate_menu_lk" href="#" target="_blank">保险</a></li>
+	                </ul>
+	                <div class="cate_pop">
+					    <div class="cate_part clearfix" id="cate_item1" data-id="a" data-inlazyqueue="true"><div class="cate_part_col1"><div class="cate_channel"><a href="#" class="cate_channel_lk" target="_blank">家电馆<i class="iconfont cate_channel_arrow">&gt;</i></a> <a href="#" class="cate_channel_lk" target="_blank">乡镇专卖店<i class="iconfont cate_channel_arrow">&gt;</i></a> <a href="#" class="cate_channel_lk" target="_blank">家电服务<i class="iconfont cate_channel_arrow">&gt;</i></a> <a href="#" class="cate_channel_lk" target="_blank">家电企业购<i class="iconfont cate_channel_arrow">&gt;</i></a> <a href="#" class="cate_channel_lk" target="_blank">商用电器<i class="iconfont cate_channel_arrow">&gt;</i></a> <a href="#" class="cate_channel_lk" target="_blank">高端家电<i class="iconfont cate_channel_arrow">&gt;</i></a></div><div class="cate_detail"><dl class="cate_detail_item cate_detail_item1"><dt class="cate_detail_tit"><a href="#" class="cate_detail_tit_lk" target="_blank">电视<i class="iconfont cate_detail_tit_arrow">&gt;</i></a></dt><dd class="cate_detail_con"><a href="#" class="cate_detail_con_lk" target="_blank">曲面电视</a> <a href="#" class="cate_detail_con_lk" target="_blank">超薄电视</a> <a href="#" class="cate_detail_con_lk" target="_blank">HDR电视</a> <a href="#" class="cate_detail_con_lk" target="_blank">OLED电视</a> <a href="#" class="cate_detail_con_lk" target="_blank">4K超清电视</a> <a href="#" class="cate_detail_con_lk" target="_blank">人工智能电视</a> <a href="#" class="cate_detail_con_lk" target="_blank">55英寸</a> <a href="#" class="cate_detail_con_lk" target="_blank">65英寸</a> <a href="#" class="cate_detail_con_lk" target="_blank">电视配件</a></dd></dl><dl class="cate_detail_item cate_detail_item2"><dt class="cate_detail_tit"><a href="#" class="cate_detail_tit_lk" target="_blank">空调<i class="iconfont cate_detail_tit_arrow">&gt;</i></a></dt><dd class="cate_detail_con"><a href="#" class="cate_detail_con_lk" target="_blank">壁挂式空调</a> <a href="#" class="cate_detail_con_lk" target="_blank">柜式空调</a> <a href="#" class="cate_detail_con_lk" target="_blank">中央空调</a> <a href="#" class="cate_detail_con_lk" target="_blank">以旧换新</a> <a href="#" class="cate_detail_con_lk" target="_blank">0元安装</a> <a href="#" class="cate_detail_con_lk" target="_blank">空调配件</a></dd></dl><dl class="cate_detail_item cate_detail_item3"><dt class="cate_detail_tit"><a href="#" class="cate_detail_tit_lk" target="_blank">洗衣机<i class="iconfont cate_detail_tit_arrow">&gt;</i></a></dt><dd class="cate_detail_con"><a href="#" class="cate_detail_con_lk" target="_blank">滚筒洗衣机</a> <a href="#" class="cate_detail_con_lk" target="_blank">洗烘一体机</a> <a href="#" class="cate_detail_con_lk" target="_blank">波轮洗衣机</a> <a href="#" class="cate_detail_con_lk" target="_blank">迷你洗衣机</a> <a href="#" class="cate_detail_con_lk" target="_blank">烘干机</a> <a href="#" class="cate_detail_con_lk" target="_blank">洗衣机配件</a></dd></dl><dl class="cate_detail_item cate_detail_item4"><dt class="cate_detail_tit"><a href="#" class="cate_detail_tit_lk" target="_blank">冰箱<i class="iconfont cate_detail_tit_arrow">&gt;</i></a></dt><dd class="cate_detail_con"><a href="#" class="cate_detail_con_lk" target="_blank">多门</a> <a href="#" class="cate_detail_con_lk" target="_blank">对开门</a> <a href="#" class="cate_detail_con_lk" target="_blank">三门</a> <a href="#" class="cate_detail_con_lk" target="_blank">双门</a> <a href="#" class="cate_detail_con_lk" target="_blank">冷柜/冰吧</a> <a href="#" class="cate_detail_con_lk" target="_blank">酒柜</a> <a href="#" class="cate_detail_con_lk" target="_blank">冰箱配件</a></dd></dl><dl class="cate_detail_item cate_detail_item5"><dt class="cate_detail_tit"><a href="#" class="cate_detail_tit_lk" target="_blank">厨卫大电<i class="iconfont cate_detail_tit_arrow">&gt;</i></a></dt><dd class="cate_detail_con"><a href="#" class="cate_detail_con_lk" target="_blank">油烟机</a> <a href="#" class="cate_detail_con_lk" target="_blank">燃气灶</a> <a href="#" class="cate_detail_con_lk" target="_blank">烟灶套装</a> <a href="#" class="cate_detail_con_lk" target="_blank">消毒柜</a> <a href="#" class="cate_detail_con_lk" target="_blank">洗碗机</a> <a href="#" class="cate_detail_con_lk" target="_blank">电热水器</a> <a href="#" class="cate_detail_con_lk" target="_blank">燃气热水器</a> <a href="#" class="cate_detail_con_lk" target="_blank">嵌入式厨电</a> <a href="#" class="cate_detail_con_lk" target="_blank">商用厨房电器</a></dd></dl><dl class="cate_detail_item cate_detail_item6"><dt class="cate_detail_tit"><a href="#" class="cate_detail_tit_lk" target="_blank">厨房小电<i class="iconfont cate_detail_tit_arrow">&gt;</i></a></dt><dd class="cate_detail_con"><a href="#" class="cate_detail_con_lk" target="_blank">电饭煲</a> <a href="#" class="cate_detail_con_lk" target="_blank">微波炉</a> <a href="#" class="cate_detail_con_lk" target="_blank">电烤箱</a> <a href="#" class="cate_detail_con_lk" target="_blank">电磁炉</a> <a href="#" class="cate_detail_con_lk" target="_blank">电陶炉</a> <a href="#" class="cate_detail_con_lk" target="_blank">电压力锅</a> <a href="#" class="cate_detail_con_lk" target="_blank">空气炸锅</a> <a href="#" class="cate_detail_con_lk" target="_blank">豆浆机</a> <a href="#" class="cate_detail_con_lk" target="_blank">咖啡机</a> <a href="#" class="cate_detail_con_lk" target="_blank">面包机</a> <a href="#" class="cate_detail_con_lk" target="_blank">榨汁机/原汁机</a> <a href="#" class="cate_detail_con_lk" target="_blank">料理机</a> <a href="#" class="cate_detail_con_lk" target="_blank">电饼铛</a> <a href="#" class="cate_detail_con_lk" target="_blank">养生壶/煎药壶</a> <a href="#" class="cate_detail_con_lk" target="_blank">酸奶机</a> <a href="#" class="cate_detail_con_lk" target="_blank">煮蛋器</a> <a href="#" class="cate_detail_con_lk" target="_blank">面条机</a> <a href="#" class="cate_detail_con_lk" target="_blank">电水壶/热水瓶</a> <a href="#" class="cate_detail_con_lk" target="_blank">电炖锅</a> <a href="#" class="cate_detail_con_lk" target="_blank">多用途锅</a> <a href="#" class="cate_detail_con_lk" target="_blank">电烧烤炉</a> <a href="#" class="cate_detail_con_lk" target="_blank">电热饭盒</a> <a href="#" class="cate_detail_con_lk" target="_blank">其它厨房电器</a></dd></dl><dl class="cate_detail_item cate_detail_item7"><dt class="cate_detail_tit"><a href="#" class="cate_detail_tit_lk" target="_blank">生活电器<i class="iconfont cate_detail_tit_arrow">&gt;</i></a></dt><dd class="cate_detail_con"><a href="#" class="cate_detail_con_lk" target="_blank">取暖电器</a> <a href="#" class="cate_detail_con_lk" target="_blank">冷风扇</a> <a href="#" class="cate_detail_con_lk" target="_blank">吸尘器/除螨仪</a> <a href="#" class="cate_detail_con_lk" target="_blank">净化器</a> <a href="#" class="cate_detail_con_lk" target="_blank">扫地机器人</a> <a href="#" class="cate_detail_con_lk" target="_blank">加湿器</a> <a href="#" class="cate_detail_con_lk" target="_blank">挂烫机/熨斗</a> <a href="#" class="cate_detail_con_lk" target="_blank">电风扇</a> <a href="#" class="cate_detail_con_lk" target="_blank">插座</a> <a href="#" class="cate_detail_con_lk" target="_blank">电话机</a> <a href="#" class="cate_detail_con_lk" target="_blank">饮水机</a> <a href="#" class="cate_detail_con_lk" target="_blank">净水器</a> <a href="#" class="cate_detail_con_lk" target="_blank">除湿机</a> <a href="#" class="cate_detail_con_lk" target="_blank">干衣机</a> <a href="#" class="cate_detail_con_lk" target="_blank">清洁机</a> <a href="#" class="cate_detail_con_lk" target="_blank">收录/音机</a> <a href="#" class="cate_detail_con_lk" target="_blank">毛球修剪器</a> <a href="#" class="cate_detail_con_lk" target="_blank">其它生活电器</a> <a href="#" class="cate_detail_con_lk" target="_blank">生活电器配件</a></dd></dl><dl class="cate_detail_item cate_detail_item8"><dt class="cate_detail_tit"><a href="#" class="cate_detail_tit_lk" target="_blank">个护健康<i class="iconfont cate_detail_tit_arrow">&gt;</i></a></dt><dd class="cate_detail_con"><a href="#" class="cate_detail_con_lk" target="_blank">剃须刀</a> <a href="#" class="cate_detail_con_lk" target="_blank">口腔护理</a> <a href="#" class="cate_detail_con_lk" target="_blank">电吹风</a> <a href="#" class="cate_detail_con_lk" target="_blank">美容器</a> <a href="#" class="cate_detail_con_lk" target="_blank">洁面仪</a> <a href="#" class="cate_detail_con_lk" target="_blank">卷/直发器</a> <a href="#" class="cate_detail_con_lk" target="_blank">理发器</a> <a href="#" class="cate_detail_con_lk" target="_blank">剃/脱毛器</a> <a href="#" class="cate_detail_con_lk" target="_blank">足浴盆</a> <a href="#" class="cate_detail_con_lk" target="_blank">健康秤/厨房秤</a> <a href="#" class="cate_detail_con_lk" target="_blank">按摩器</a> <a href="#" class="cate_detail_con_lk" target="_blank">足疗机</a> <a href="#" class="cate_detail_con_lk" target="_blank">按摩椅</a> <a href="#" class="cate_detail_con_lk" target="_blank">其它健康电器</a></dd></dl><dl class="cate_detail_item cate_detail_item9"><dt class="cate_detail_tit"><a href="#" class="cate_detail_tit_lk" target="_blank">家庭影音<i class="iconfont cate_detail_tit_arrow">&gt;</i></a></dt><dd class="cate_detail_con"><a href="#" class="cate_detail_con_lk" target="_blank">家庭影院</a> <a href="#" class="cate_detail_con_lk" target="_blank">迷你音响</a> <a href="#" class="cate_detail_con_lk" target="_blank">DVD</a> <a href="#" class="cate_detail_con_lk" target="_blank">功放</a> <a href="#" class="cate_detail_con_lk" target="_blank">回音壁</a> <a href="#" class="cate_detail_con_lk" target="_blank">影音配件</a></dd></dl><dl class="cate_detail_item cate_detail_item10"><dt class="cate_detail_tit"><a href="#" class="cate_detail_tit_lk" target="_blank">进口电器<i class="iconfont cate_detail_tit_arrow">&gt;</i></a></dt><dd class="cate_detail_con"><a href="#" class="cate_detail_con_lk" target="_blank">进口电器</a></dd></dl></div></div><div class="cate_part_col2"><div class="cate_brand"><a href="#" class="cate_brand_lk" target="_blank"><img data-lazy-img="done" width="83" height="35" src="images/logo_1.jpg" data-webp="no"></a> <a href="#" class="cate_brand_lk" target="_blank"><img data-lazy-img="done" width="83" height="35" src="images/logo_2.jpg" data-webp="no"></a> <a href="#" class="cate_brand_lk" target="_blank"><img data-lazy-img="done" width="83" height="35" src="images/logo_3.jpg" data-webp="no"></a> <a href="#" class="cate_brand_lk" target="_blank"><img data-lazy-img="done" width="83" height="35" src="images/logo_4.jpg" data-webp="no"></a> <a href="#" class="cate_brand_lk" target="_blank"><img data-lazy-img="done" width="83" height="35" src="images/logo_5.jpg" data-webp="no"></a> <a href="#" class="cate_brand_lk" target="_blank"><img data-lazy-img="done" width="83" height="35" src="images/logo_6.jpg" data-webp="no"></a> <a href="#" class="cate_brand_lk" target="_blank"><img data-lazy-img="done" width="83" height="35" src="images/logo_7.jpg" data-webp="no"></a> <a href="#" class="cate_brand_lk" target="_blank"><img data-lazy-img="done" width="83" height="35" src="images/logo_8.jpg" data-webp="no"></a></div><div class="cate_promotion"><a href="#" class="cate_promotion_lk" target="_blank"><img data-lazy-img="done" width="168" height="134" src="images/banner_1.jpg" data-webp="no"></a> <a href="#" class="cate_promotion_lk" target="_blank"><img data-lazy-img="done" width="168" height="134" src="images/banner_2.jpg" data-webp="no"></a></div></div></div>
+	                </div>   
+	            </div>
+	        </div>
+	        <!-- nav e -->
+	        <!-- slider s -->
+	        <div class="fs_col_slider">
+			    <div class="slider">
+			        <div class="slider_main">
+			            <ul class="slider_list">
+			                <li class="slider_item">
+			                    <a class="slider_item_lk" href="#" target="_blank"><img class="slider_item_lk_img" src="images/slide_1.jpg"></a>
+			                </li>
+			                <li class=" slider_item">
+			                    <a class="slider_item_lk" href="#" target="_blank"><img class="slider_item_lk_img" src="images/slide_2.jpg"></a>
+			                </li>
+			                <li class="slider_item">
+			                    <a class="slider_item_lk" href="#" target="_blank"><img class="slider_item_lk_img" src="images/slide_3.jpg"></a>
+			                </li>
+			                <li class="slider_item">
+			                    <a class="slider_item_lk" href="#" target="_blank"><img class="slider_item_lk_img" src="images/slide_1.jpg"></a>
+			                </li>
+			                <li class="slider_item">
+			                    <a class="slider_item_lk" href="#" target="_blank"><img class="slider_item_lk_img" src="images/slide_2.jpg"></a>
+			                </li>
+			                <li class="slider_item">
+			                    <a class="slider_item_lk" href="#" target="_blank"><img class="slider_item_lk_img" src="images/slide_3.jpg"></a>
+			                </li>
+			                <li class="slider_item">
+			                    <a class="slider_item_lk" href="#" target="_blank"><img class="slider_item_lk_img" src="images/slide_1.jpg"></a>
+			                </li>
+			                <li class="slider_item">
+			                    <a class="slider_item_lk" href="#" target="_blank"><img class="slider_item_lk_img" src="images/slide_2.jpg"></a>
+			                </li>
+			            </ul>
+			            <div class="slider_indicator">
+			                <i class="slider_indicator_btn"></i>
+			                <i class="slider_indicator_btn"></i>
+			                <i class="slider_indicator_btn"></i>
+			                <i class="slider_indicator_btn"></i>
+			                <i class="slider_indicator_btn"></i>
+			                <i class="slider_indicator_btn"></i>
+			                <i class="slider_indicator_btn"></i>
+			                <i class="slider_indicator_btn slider_indicator_btn_last"></i>
+			            </div>
+			            <a class="slider_control_item slider_control_prev" href="javascript:void(0)"><i class="iconfont"></i></a>
+			            <a class="slider_control_item slider_control_next" href="javascript:void(0)"><i class="iconfont"></i></a>
+			        </div>
+			        <div class="slider_extend clearfix">
+			            <div class="slider_bi">
+			                <a class="slider_bi_lk" href="#" target="_blank"><img class="slider_bi_img" src="images/slide_b1.jpg"></img></a>
+			            </div>
+			            <div class="slider_bi">
+			                <a class="slider_bi_lk" href="#" target="_blank"><img class="slider_bi_img" src="images/slide_b2.jpg"></img></a>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<!-- slider e -->
+			<!-- multi s -->
+			<div class="fs_col_multi">
+			    <!-- user s -->
+			    <div class="user">
+			        <div class="user_info">
+			            <div class="user_info_avatar">
+			                <a class="user_info_avatar_lk" href="#" target="_blank"><img class="user_info_avatar_img" src="images/no_login.jpg"></a>
+			            </div>
+			            <div class="user_info_show">
+			                <p class="user_info_tip">Hi, 欢迎来到京东!</p>
+			                <p>
+			                    <a class="user_info_login" href="#">登录</a>
+			                    <a class="user_info_reg" href="#">注册</a>
+			                </p>
+			            </div>
+			        </div>
+			        <div class="user_profit">
+			            <a class="user_profit_lk" href="#" target="_blank">新人福利</a>
+			            <a class="user_profit_lk" href="#" target="_blank">PLUS会员</a>
+			        </div>
+			    </div>
+			    <!-- user e -->
+			    <!-- news s -->
+			    <div class="news">
+			        <div class="news_tab">
+			            <div class="news_tab_head clearfix">
+			                <a class="news_tab_head_item news_first" href="#">促销</a>
+			                <a class="news_tab_head_item news_last" href="#">公告</a>
+			                <div class="news_tab_active" style="transform: translateX(0px);"></div>
+			                <a class="news_more" href="#" target="_blank">更多</a>
+			            </div>
+			            <div class="news_tab_content">
+			                <div class="news_tab_content_item" style="display: none;">
+			                    <ul class="news_list">
+			                        <li class="news_item"><a class="news_link" href="#" target="_blank">超级自行车999限量抢！</a></li>
+			                        <li class="news_item"><a class="news_link" href="#" target="_blank">居家感恩好礼低至9.9元</a></li>
+			                        <li class="news_item"><a class="news_link" href="#" target="_blank">员工福利送凯迪拉克？</a></li>
+			                        <li class="news_item"><a class="news_link" href="#" target="_blank">青春舞台，10万元等你战！</a></li>
+			                    </ul>
+			                </div>
+			                <div class="news_tab_content_item" style="display: block;">
+			                    <ul class="news_list">
+			                        <li class="news_item"><a class="news_link" href="#" target="_blank">关于召回普利司通（天津）轮胎有限公司2个规格乘用车轮胎的公告</a></li>
+			                        <li class="news_item"><a class="news_link" href="#" target="_blank">京东物流推出配送员统一外呼电话"95056”</a></li>
+			                        <li class="news_item"><a class="news_link" href="#" target="_blank">天府大件运营中心开仓公告</a></li>
+			                        <li class="news_item"><a class="news_link" href="#" target="_blank">京东大件物流“送装一体”服务全面升级</a></li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			    <!-- news e -->
+			    <!-- service s -->
+			    <div class="service" id="J_service">
+			        <div class="service_entry">
+			            <ul class="service_list">
+			                <li class="service_item service_iframes">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <span class="service_corner">
+			                            <i class="service_corner_txt">惠</i>
+			                            <i class="service_corner_ico"></i>
+			                        </span>
+			                        <i class="service_ico service_ico_huafei"></i>
+			                        <span class="service_txt">话费</span>
+			                    </a>
+			                </li>
+			                <li class="service_item service_iframes">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <i class="service_ico service_ico_jipiao"></i>
+			                        <span class="service_txt">机票</span>
+			                    </a>
+			                </li>
+			                <li class="service_item service_iframes">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <i class="service_ico service_ico_jiudian"></i>
+			                        <span class="service_txt">酒店</span>
+			                    </a>
+			                </li>
+			                <li class="service_item service_iframes">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <i class="service_ico service_ico_youxi"></i>
+			                        <span class="service_txt">游戏</span>
+			                    </a>
+			                </li>
+			                <li class="service_item">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <i class="service_ico service_ico_qyg"></i>
+			                        <span class="service_txt">企业购</span>
+			                    </a>
+			                </li>
+			                <li class="service_item">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <i class="service_ico service_ico_jiayou"></i>
+			                        <span class="service_txt">加油卡</span>
+			                    </a>
+			                </li>
+			                <li class="service_item">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <span class="service_corner">
+			                            <i class="service_corner_txt">减</i>
+			                            <i class="service_corner_ico"></i>
+			                        </span>
+			                        <i class="service_ico service_ico_dianying"></i>
+			                        <span class="service_txt">电影票</span>
+			                    </a>
+			                </li>
+			                <li class="service_item">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <i class="service_ico service_ico_huoche"></i>
+			                        <span class="service_txt">火车票</span>
+			                    </a>
+			                </li>
+			                <li class="service_item">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <i class="service_ico service_ico_zhongchou"></i>
+			                        <span class="service_txt">众筹</span>
+			                    </a>
+			                </li>
+			                <li class="service_item">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <i class="service_ico service_ico_licai"></i>
+			                        <span class="service_txt">理财</span>
+			                    </a>
+			                </li>
+			                <li class="service_item">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <i class="service_ico service_ico_lipin"></i>
+			                        <span class="service_txt">礼品卡</span>
+			                    </a>
+			                </li>
+			                <li class="service_item">
+			                    <a class="service_lk" href="#" target="_blank">
+			                        <i class="service_ico service_ico_baitiao"></i>
+			                        <span class="service_txt">白条</span>
+			                    </a>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="service_pop">
+			            <div class="service_pop_item"></div>
+			            <!-- jipiao s -->
+			            <div class="service_pop_item">
+			            	<div id="squares-jipiao">
+					            <ul class="squares-tab clearfix">
+					                <li class="current jp-tab"><a href="#" target="_blank">国内机票</a></li>
+					                <li class="jp-tab"><a href="#" target="_blank">国际/港澳台</a></li>
+					                <li class="jp-tab last"><a href="#" target="_blank">特惠活动</a></li>
+					            </ul>
+					            <div class="squares-main">
+					                <div class="squares-content">
+					                    <ul class="tab-content clearfix">
+					                        <li class="jp-content jp-content-gn">
+					                            <div class="select-type clearfix">
+					                                <label>
+					                                    <input checked="checked" class="flight-type" name="flighttype" type="radio">
+					                                    <span>单程</span>
+					                                </label>
+					                                <label>
+					                                    <input class="flight-type j-back-trip" name="flighttype" type="radio">
+					                                    <span>往返</span>
+					                                </label>
+					                            </div>
+					                            <div class="select-city clearfix">
+					                                <div class="city-area">
+				                                        <span class="area-title">出发</span>
+					                                    <input autocomplete="off" class="start-city" placeholder="城市" type="text" value="">
+					                                </div>
+					                                <span class="change-city">
+					                                </span>
+					                                <div class="city-area">
+				                                        <span class="area-title">到达</span>
+					                                    <input autocomplete="off" class="end-city" placeholder="城市" type="text" value="">
+					                                </div>
+					                            </div>
+					                            <div class="select-date clearfix">
+					                                <div class="date-area">
+				                                        <span class="area-title">日期</span>
+					                                    <input class="start-date" placeholder="出发" readonly="readonly" type="text">
+				                                        <input class="end-date" placeholder="返程" readonly="readonly" type="text"/>
+					                                </div>
+					                            </div>
+					                            <div class="search-jp">
+					                                <a class="search-jp-btn" href="javascript:void(0);" id="search-jp-gn">机票查询</a>
+					                                <span class="gn-word-ad"><a class="search-tip" href="#" target="_blank">当季热门特惠机票</a></span>
+					                            </div>
+					                        </li>
+					                        <li class="jp-content jp-content-gj">
+					                            <div class="select-type clearfix">
+					                                <label>
+					                                    <input checked="checked" class="flight-type" name="gjflighttype" type="radio">
+				                                        <span>单程</span>
+					                                </label>
+					                                <label>
+					                                    <input class="flight-type j-back-trip" name="gjflighttype" type="radio">
+				                                        <span>往返</span>
+					                                </label>
+					                            </div>
+					                            <div class="select-city clearfix">
+					                                <div class="city-area">
+				                                        <span class="area-title">出发</span>
+					                                    <input autocomplete="off" class="start-city" id="gjdepCity" placeholder="城市" type="text">
+					                                </div>
+					                                <span class="change-city">
+					                                </span>
+					                                <div class="city-area">
+				                                        <span class="area-title">到达</span>
+					                                    <input autocomplete="off" class="end-city" id="gjarrCity" placeholder="城市" type="text">
+					                                </div>
+					                            </div>
+					                            <div class="select-date clearfix">
+					                                <div class="date-area">
+				                                        <span class="area-title">日期</span>
+					                                    <input class="start-date" placeholder="出发" readonly="readonly" type="text">
+				                                        <input class="end-date" placeholder="返程" readonly="readonly" type="text"/>
+					                                </div>
+					                            </div>
+					                            <div class="search-jp">
+					                                <a class="search-jp-btn" href="javascript:void(0);" id="search-jp-gj">机票查询</a>
+					                                <span class="gj-word-ad"><a class="search-tip" href="#" target="_blank">国际机票任性搜</a></span>
+					                            </div>
+					                        </li>
+					                        <li class="jp-content">
+					                            <div class="jp-ads clearfix">
+					                                <span class="ad-left-img">
+					                                    <a class="jp-ad" href="#" style="float:left;" target="_blank" title="机场周边随心配！！！">
+					                                        <img alt="机场周边随心配！！！" height="119" src="images/jipiao_tehui_1.jpg" width="79"/>
+					                                    </a>
+					                                </span>
+					                                <span class="ad-right-img">
+					                                    <a class="jp-ad" href="#" style="float:right;" target="_blank" title="春游记~">
+					                                        <img alt="春游记~" height="119" src="images/jipiao_tehui_2.jpg" width="79"/>
+					                                    </a>
+					                                </span>
+					                            </div>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+					        </div>
+			            </div>
+				        <!-- jipiao e -->
+				        <!--hotel s-->
+			            <div class="service_pop_item">
+			            	<div id="squares-hotel">
+					            <ul class="squares-tab clearfix">
+					                <li class="current hotel-tab"><a href="#" target="_blank">国内/港澳台</a></li>
+					                <li class="hotel-tab last"><a href="#" target="_blank">促销活动</a></li>
+					            </ul>
+					            <div class="squares-main">
+					                <div class="squares-content">
+					                    <ul class="tab-content clearfix">
+					                        <li class="hotel-content hotel-content-gn">
+					                            <div class="city-area">
+					                                <input autocomplete="off" class="start-city" data-choose="北京" data-val="824297" id="sqgn-City" maxlength="10" placeholder="请输入目的地" style="color: rgb(102, 102, 102);" type="text" value="">
+					                                    <span class="area-title">目的地</span>
+					                                </input>
+					                            </div>
+					                            <div class="select-date">
+					                                <div class="city-area">
+					                                    <input class="start-date" data-val="2017-11-22" id="sqgn-start" placeholder="入住日期" readonly="readonly" style="color: rgb(102, 102, 102);" type="text" value="">
+					                                        <span class="area-title">入住日期</span>
+					                                    </input>
+					                                </div>
+					                                <div class="city-area">
+					                                    <input class="end-date" data-val="2017-11-23" id="sqgn-end" placeholder="离店日期" readonly="readonly" style="color: rgb(102, 102, 102);" type="text" value="">
+					                                        <span class="area-title">离店日期</span>
+					                                    </input>
+					                                </div>
+					                            </div>
+					                            <div class="city-area">
+					                                <input autocomplete="off" class="select-area" id="sqgn-area" placeholder="酒店/商圈/地标" type="text" value=""/>
+					                            </div>
+					                            <div class="search-jp">
+					                                <a class="search-hotel-btn" href="javascript:void(0);" id="search-hotel-gn">酒店查询</a>
+					                                <span class="gn-word-ad">
+					                                    <a class="search-tip" href="#" target="_blank">订酒店上京东</a>
+					                                </span>
+					                            </div>
+					                        </li>
+					                        <li class="hotel-content">
+					                            <div class="hotel-ads clearfix">
+					                                <span class="ad-left-img">
+					                                    <a class="hotel-ad" clstag="" href="#" style="float:left;" target="_blank" title="">
+					                                        <img alt="" height="120" src="./images/hotel_tehui_1.jpg" width="80"/>
+					                                    </a>
+					                                </span>
+					                                <span class="ad-right-img">
+					                                    <a class="hotel-ad" clstag="" href="#" style="float:right;" target="_blank" title="">
+					                                        <img alt="" height="120" src="./images/hotel_tehui_2.jpg" width="80"/>
+					                                    </a>
+					                                </span>
+					                            </div>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+					        </div>
+			            </div>
+			            <!--hotel e-->
+			            <!--youxi s-->
+			            <div class="service_pop_item">
+			            	<div id="squares-game">
+					            <ul class="squares-tab clearfix">
+					                <li class="current jp-tab"><a href="javascript:void(0);" target="_blank">点卡</a></li>
+					                <li class="jp-tab"><a href="javascript:void(0);" target="_blank">QQ</a></li>
+					                <li class="jp-tab"><a href="javascript:void(0);">页游</a></li>
+					            </ul>
+					            <div class="squares-main">
+					                <div class="squares-content">
+					                    <ul class="tab-content clearfix">
+					                        <li class="jp-content jp-content-gn">
+					                            <div class="select-city clearfix">
+					                                <div class="city-area">
+					                                    <input autocomplete="off" class="start-city" placeholder="游戏" style="color: rgb(170, 170, 170);" type="text">
+					                                        <span class="area-title">游戏</span>
+					                                    </input>
+					                                </div>
+					                            </div>
+					                            <div class="select-date clearfix">
+					                                <div class="date-area">
+					                                    <span class="area-title">面值</span>
+					                                    <input class="start-date" placeholder="面值" readonly="readonly" style="color: rgb(170, 170, 170);" type="text">
+					                                        <span class="game-money">
+					                                            ¥
+																<span class="game-money-result">0.00</span>
+															</span>
+					                                    </input>
+					                                </div>
+					                            </div>
+					                            <div class="select-type clearfix">
+					                                <label class="game-method-zc">
+					                                    <input checked="checked" class="flight-type" name="gametype" type="radio" value="2">
+					                                        <span>直充</span>
+					                                    </input>
+					                                </label>
+					                                <label class="game-method-km">
+					                                    <input class="flight-type j-back-trip" name="gametype" type="radio" value="1">
+					                                        <span>卡密</span>
+					                                    </input>
+					                                </label>
+					                            </div>
+					                            <div class="search-jp">
+					                                <a class="search-jp-btn" href="javascript:void(0);" id="squares-search-game">快速充值</a>
+					                                <span class="card-word-ad">
+					                                    <a class="search-tip" href="#" target="_blank">吃鸡就要快人一步</a>
+					                                </span>
+					                            </div>
+					                        </li>
+					                        <li class="jp-content jp-content-gj">
+					                            <div class="select-city clearfix">
+					                                <div class="city-area">
+					                                    <input class="start-city"  placeholder="QQ" style="color: rgb(102, 102, 102);" type="text">
+					                                        <span class="area-title">QQ</span>
+					                                    </input>
+					                                </div>
+					                            </div>
+					                            <div class="select-date clearfix">
+					                                <div class="date-area">
+					                                    <span class="area-title">面值 </span>
+					                                    <input class="start-date" placeholder="面值" readonly="readonly" style="color: rgb(102, 102, 102);" type="text">
+					                                        <span class="game-money">
+					                                            ¥
+					                                            <span class="game-money-result">0.95</span>
+					                                        </span>
+					                                    </input>
+					                                </div>
+					                            </div>
+					                            <div class="select-type clearfix">
+					                                <label class="game-method-zc" style="display: inline;">
+					                                    <input checked="checked" class="flight-type" name="qqtype" type="radio" value="2">
+					                                        <span>直充</span>
+					                                    </input>
+					                                </label>
+					                                <label class="game-method-km" style="display: none;">
+					                                    <input class="flight-type j-back-trip" name="qqtype" type="radio" value="1">
+					                                        <span>卡密</span>
+					                                    </input>
+					                                </label>
+					                            </div>
+					                            <div class="search-jp">
+					                                <a class="search-jp-btn" href="javascript:void(0);" id="squares-search-qq">快速充值</a>
+					                                <span class="qq-word-ad">
+					                                    <a class="search-tip" href="#" target="_blank">
+															 吃鸡就要快人一步
+					                                    </a>
+					                                </span>
+					                            </div>
+					                        </li>
+					                        <li class="jp-content">
+					                            <div class="jp-ads clearfix">
+					                                <span class="ad-left-img">
+					                                    <a class="jp-ad" href="#" style="float:left;" target="_blank" title="">
+					                                        <img alt="" height="110" src="./images/modify.jpg" width="80"/>
+					                                    </a>
+					                                </span>
+					                                <span class="ad-right-img">
+					                                    <a class="jp-ad" href="#" style="float:right;" target="_blank" title="">
+					                                        <img alt="" height="110" src="./images/hotel_tehui_1.jpg" width="80"/>
+					                                    </a>
+					                                </span>
+					                            </div>
+					                        </li>
+					                    </ul>
+					                </div>
+					            </div>
+					        </div>
+			            </div>
+			            <!--youxi e-->
+			            <a class="service_pop_close iconfont" href="javascript:;"></a>
+			        </div>
+			    </div>
+			    <!-- service e -->
+			</div>
+			<!-- multi e -->
+	    </div>
+	</div>
+	<!-- fs end -->
+	
+
+
+
+	<!--<div class="toolbar-wrap">
+		<div class="toolbar">
+			<div class="toolbar-tabs">
+				<div class="toolbar-tabs-item toolbar-tabs-cart">
+					<i class="tab-ico"></i>
+					<em class="tab-text">购物车</em>
+				</div>
+				<div class="toolbar-tabs-item toolbar-tabs-follow">
+					<i class="tab-ico"></i>
+					<em class="tab-text">我的关注</em>
+				</div>
+				<div class="toolbar-tabs-item toolbar-tabs-history">
+					<i class="tab-ico"></i>
+					<em class="tab-text">我的足迹</em>
+				</div>
+				<div class="toolbar-tabs-item toolbar-tabs-message">
+					<i class="tab-ico"></i>
+					<em class="tab-text">我的消息</em>
+				</div>
+				<div class="toolbar-tabs-item toolbar-tabs-jimi">
+					<i class="tab-ico"></i>
+					<em class="tab-text">咨询JDMI</em>
+				</div>
+			</div>
+			<div class="toolbar-footer">
+				<div class="toolbar-tabs-item toolbar-tabs-top">
+					<i class="tab-ico"></i>
+					<em class="tab-text">顶部</em>
+				</div>
+				<div class="toolbar-tabs-item toolbar-tabs-feedback">
+					<i class="tab-ico"></i>
+					<em class="tab-text">反馈</em>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+
+
+	<ul>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+		<li>w</li>
+	</ul>
+
+</body>
+</html>
+<!-- <script language="JavaScript" src="./js/index.js"></script> -->
