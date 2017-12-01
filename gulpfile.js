@@ -57,7 +57,7 @@ gulp.task('less', function () {
 
 //压缩js  
 gulp.task("script", function () {
-    gulp.src(['src/js/base.js', 'src/js/index.js'])
+    gulp.src(['src/js/*.js'])
         .pipe(changed('dist/js', { hasChanged: changed.compareSha1Digest }))
         .pipe(concat('index.js'))
         .pipe(ugLify())
