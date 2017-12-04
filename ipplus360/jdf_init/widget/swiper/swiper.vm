@@ -1,0 +1,39 @@
+<div class="swiper-container">
+    <div
+        class="swiper-wrapper"
+        style="width: 11418px; height: 552px; transform: translate3d(-3806px, 0px, 0px); transition-duration: 0.3s;">
+        <a
+            href="/tools/"
+            class="swiper-slide swiper-slide-duplicate"
+            style="background: url(&quot;/skin/aiwen_2017/images/iptools.png&quot;) center top no-repeat; width: 1903px; height: 552px;"></a>
+        <a
+            href="/pros/iph/"
+            class="swiper-slide"
+            style="background: url(&quot;/skin/aiwen_2017/images/first-banner1.png&quot;) center top no-repeat; width: 1903px; height: 552px;"></a>
+        <a
+            href="/s/upgrade/"
+            target="_blank"
+            class="swiper-slide swiper-slide-visible swiper-slide-active"
+            style="background: url(&quot;/skin/aiwen_2017/images/first-banner3.png&quot;) center top no-repeat; width: 1903px; height: 552px;"></a>
+        <a
+            href="http://mall.ipplus360.com/user/activity/"
+            target="_blank"
+            class="swiper-slide"
+            style="background: url(&quot;/skin/aiwen_2017/images/first-banner2.png&quot;) center top no-repeat; width: 1903px; height: 552px;"></a>
+        <a
+            href="/tools/"
+            class="swiper-slide"
+            style="background: url(&quot;/skin/aiwen_2017/images/iptools.png&quot;) center top no-repeat; width: 1903px; height: 552px;"></a>
+        <a
+            href="/pros/iph/"
+            class="swiper-slide swiper-slide-duplicate"
+            style="background: url(&quot;/skin/aiwen_2017/images/first-banner1.png&quot;) center top no-repeat; width: 1903px; height: 552px;"></a>
+    </div>
+    <!-- Add Pagination -->
+    <div class="pagination">
+        <span class="swiper-pagination-switch"></span>
+        <span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span>
+        <span class="swiper-pagination-switch"></span>
+        <span class="swiper-pagination-switch"></span>
+    </div>
+</div>
