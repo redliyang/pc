@@ -1,33 +1,58 @@
-.topBanner {
-    height: 62px;
-    position: relative;
-    background: url('http://www.ipplus360.com/skin/aiwen_2017/images/tips_bg.png');
-    line-height: 62px;
-}
-.topBanner .inner {
-    width: 1017px;
-    margin: 0 auto;
-    text-align: center;
-    img {
-        vertical-align: middle;
-        margin: 0 5px 5px 5px;
-    }
-    span {
-        font-style: 18px;
-        font-weight: 700;   
-    }
-    a {
-        margin-left: 75px;  
-        padding: 5px 15px;
-        background-color: #0195ff;
-    }
-}
-.topBanner .close {
-    position: absolute;
-    right: 10px;
-    top: 0;
-    font-size: 20px;
-    line-height: 20px;
-    color: #ffffff;
+.swiper-container {
+    width: 100%;
+    height: 552px;
     cursor: pointer;
+    overflow: hidden;
+    .swiper-wrapper {
+        // position: relative;
+        // width: 11418px; 
+        width: 400%;
+        height: 552px; 
+        // background-color: #009900;
+        a {
+            display: block;
+            width: 25%;
+            height: 552px;
+            float: left;
+            background-size: contain !important;
+        }
+    }
 }
+.swiper-wrapper {
+// animation: myfirst 20s infinite 3s;
+// -moz-animation: myfirst 5s;	/* Firefox */
+// -webkit-animation: myfirst 5s;	/* Safari 和 Chrome */
+// -o-animation: myfirst 5s;	/* Opera */
+}
+@keyframes myfirst
+{
+0%   {background: red;transform: translateX(0%);}
+25%  {background: yellow;transform: translateX(-25%);}
+50%  {background: blue;transform: translateX(-50%);}
+75%  {background: blue;transform: translateX(-75%);}
+100% {background: green;transform: translateX(0%);}
+}
+
+// @-moz-keyframes myfirst /* Firefox */
+// {
+// 0%   {background: red;transform: translateX(-20%);}
+// 25%  {background: yellow;transform: translateX(-20%);}
+// 50%  {background: blue;transform: translateX(-20%);}
+// 100% {background: green;transform: translateX(-20%);}
+// }
+
+// @-webkit-keyframes myfirst /* Safari 和 Chrome */
+// {
+// 0%   {background: red;}
+// 25%  {background: yellow;}
+// 50%  {background: blue;}
+// 100% {background: green;}
+// }
+
+// @-o-keyframes myfirst /* Opera */
+// {
+// 0%   {background: red;}
+// 25%  {background: yellow;}
+// 50%  {background: blue;}
+// 100% {background: green;}
+// }
