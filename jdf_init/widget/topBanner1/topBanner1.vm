@@ -1,0 +1,10 @@
+<div class="topBanner">
+    <div class="inner w">
+        <img src="http://www.ipplus360.com/skin/aiwen_2017/images//tips.png" alt="">
+        <span>新产品</span>
+        <img src="http://www.ipplus360.com/skin/aiwen_2017/images/tips1.png" alt="">
+        <span>上线</span>
+        <a href="https://mall.ipplus360.com/" target="_blank">查看详情</a>
+    </div>
+    <span class="close">×</span>
+</div>
