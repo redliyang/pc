@@ -1,0 +1,22 @@
+<div class="mid-nav index" style="position: static; top: 0px; z-index: 999;">
+    <div class="mid-nav-inner">
+        <li class="active one">
+            <a href="javascript:;">
+                <img src="http://www.ipplus360.com/skin/aiwen_2017/images/mid-nav1.png" alt="">
+                <p>应用领域</p>
+            </a>
+        </li>
+        <li class="two">
+            <a href="javascript:;">
+                <img src="http://www.ipplus360.com/skin/aiwen_2017/images/mid-nav2.png" alt="">
+                <p>6大优势</p>
+            </a>
+        </li>
+        <li class="three">
+            <a href="javascript:;">
+                <img src="http://www.ipplus360.com/skin/aiwen_2017/images/mid-nav3.png" alt="">
+                <p>产品服务</p>
+            </a>
+        </li>
+    </div>
+</div>
